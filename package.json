@@ -1,0 +1,54 @@
+{
+  "name": "@eyalm321/mailchimp-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Mailchimp Marketing API v3 — 286 tools covering campaigns, lists, automations, e-commerce, templates, reports, and more",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "dist/index.js",
+  "bin": {
+    "mailchimp-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mailchimp",
+    "email-marketing",
+    "claude",
+    "model-context-protocol",
+    "campaigns",
+    "automation",
+    "ecommerce"
+  ],
+  "author": "Eyalm321",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eyalm321/mailchimp-mcp.git"
+  },
+  "homepage": "https://github.com/Eyalm321/mailchimp-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/Eyalm321/mailchimp-mcp/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
+  }
+}
